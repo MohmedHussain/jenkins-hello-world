@@ -1,8 +1,14 @@
-import groovy.json.*
-args_map = [version:"1.$BUILD_NUMBER"]
+#import groovy.json.*
+#args_map = [version:"1.$BUILD_NUMBER"]
 #//print "Build number: "+BUILD_NUMBER
 #version = BUILD_NUMBER
-print "version: "+version
+#print "version: "+version
+version: 0.1
+component: build
+timeoutInSeconds: 900
+failImmediatelyOnError: true
+runAs: root
+shell: bash
 
 pipeline {
   agent any
